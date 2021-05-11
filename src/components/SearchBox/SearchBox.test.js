@@ -5,7 +5,7 @@ import SearchBox from '.'
 it('renders correctly', () => {
   const { queryByTestId, queryByPlaceholderText } = render(<SearchBox />)
 
-  expect(queryByTestId('search-button')).toBeTruthy()
+  expect(queryByTestId('search-button')).toBeTruthy() // deve estar em tela
   expect(queryByPlaceholderText('Search')).toBeTruthy()
 })
 

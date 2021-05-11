@@ -8,7 +8,8 @@ const options = ['Bulbarsour','Squirtle','Charizard']
 describe('Dropdown', () => {
   it('should start closed', () => {
     render(<Dropdown title={title} options={options} onSelect={() => {}} />)
-    
+
+    // cada option deve estar em tela
     options.forEach(option => expect(screen.queryByText(option)).not.toBeInTheDocument())
   })
 
